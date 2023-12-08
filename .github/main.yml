@@ -48,7 +48,7 @@ jobs:
     - name: Build and Push Docker Image
       run: |
         docker buildx create --use
-        docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_HUB_USERNAME }}/server1:latest -t ${{ secrets.DOCKER_HUB_USERNAME }}/server1:${{ github.sha }} .
+        docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_HUB_USERNAME }}/your-image-name:latest -t ${{ secrets.DOCKER_HUB_USERNAME }}/your-image-name:${{ github.sha }} .
 
     - name: Logout from Docker Hub
       run: docker logout
