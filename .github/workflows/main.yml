@@ -45,5 +45,5 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        docker build -t bolu004/docker-image:latest .
-        docker push bolu004/docker-image:latest
+        docker build -t egoshk/docker-image:latest .
+        docker push egoshk/docker-image:latest
